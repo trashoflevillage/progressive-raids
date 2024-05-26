@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "progressive-raids",
+	"version": "${version}",
+	"name": "Progressive Raids",
+	"description": "Raid difficulty increases as more are completed.",
+	"authors": [
+		"trashoflevillage"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/progressive-raids/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"io.github.trashoflevillage.progressive_raids.ProgressiveRaids"
+		],
+		"client": [
+			"io.github.trashoflevillage.progressive_raids.ProgressiveRaidsClient"
+		],
+		"fabric-datagen": [
+			"io.github.trashoflevillage.progressive_raids.ProgressiveRaidsDataGenerator"
+		]
+	},
+	"mixins": [
+		"progressive-raids.mixins.json",
+		{
+			"config": "progressive-raids.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

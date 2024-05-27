@@ -2,6 +2,7 @@ package io.github.trashoflevillage.progressive_raids;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.village.raid.Raid;
@@ -22,6 +23,7 @@ public class ProgressiveRaids implements ModInitializer {
 		// Proceed with mild caution.
 
 		LOGGER.info("Progressive Raids initializing");
+
 
 	}
 }

@@ -3,6 +3,7 @@
 	"package": "io.github.trashoflevillage.progressive_raids.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
+		"RaidMixin",
 		"PlayerEntityMixin"
 	],
 	"injectors": {
